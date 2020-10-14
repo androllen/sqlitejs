@@ -5,14 +5,36 @@
 yarn install
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+## Project create
+
+```sh
+vue create sqlitejs
 ```
 
+### electron
+
+```sh
+vue add electron-builder
+```
+
+### Compiles and hot-reloads for development
+
+```sh
+yarn electron:serve
+```
+
+
 ### Compiles and minifies for production
+
 ```
 yarn build
+```
+
+### sqlites install
+
+```sh
+yarn add sqllite3
+yarn add aws-sdk
 ```
 
 ### Customize configuration
