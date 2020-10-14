@@ -33,7 +33,7 @@ yarn build
 ### sqlites install
 
 ```sh
-yarn add sqllite3
+yarn add sqlite3
 yarn add aws-sdk
 ```
 
