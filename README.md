@@ -1,4 +1,4 @@
-# sqlitejs
+# Electron Vue Sqlite.js 
 
 ## Project setup
 ```
@@ -11,7 +11,7 @@ yarn install
 vue create sqlitejs
 ```
 
-### electron
+### install electron
 
 ```sh
 vue add electron-builder
@@ -23,13 +23,7 @@ vue add electron-builder
 yarn electron:serve
 ```
 
-### Compiles and minifies for production
-
-```
-yarn build
-```
-
-### sqlites install
+### install sqlite3 
 
 ```sh
 yarn add sqlite3
@@ -37,11 +31,20 @@ yarn add sqlite3
 yarn add aws-sdk
 ```
 
-### config&debug electron
+## Config & Debug Electron
 
 1. [debugging-with-vscode](https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/recipes.html#debugging-with-vscode)
 1. yarn electron:serve
 1. go to vscode -> run start debugging  -> electron: main
+1. ![debug](doc/20201014163212.png)
+
+
+### Compiles and minifies for production
+
+```
+yarn build
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
