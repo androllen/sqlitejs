@@ -31,18 +31,21 @@ function init() {
 
 function queryData(sql, callback) {
   init();
-  console.log('entry db');
 
-  db.all(sql, function (err, rows) {
-    console.log('entry db.all');
-    if (null != err) {
-      printErrorInfo(err);
-      return;
-    }
-    if (callback) {
-      callback(rows);
-    }
-  });
+  try {
+    db.all(sql, function (err, rows) {
+      if (null != err) {
+        printErrorInfo(err);
+        return;
+      }
+      console.log('entry db');
+      if (callback) {
+        callback(rows);
+      }
+    });
+  } catch (error) {
+    console.log('entry db error');
+  }
 }
 
 function printErrorInfo(params) {
