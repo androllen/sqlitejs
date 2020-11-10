@@ -1,3 +1,4 @@
+// https://www.electronjs.org/docs/api/remote#remoteprocess
 const path = require('path');
 let md5Sqlite = require('sqlite3').verbose();
 const dbPath = path.join(__static, 'sql.db');
