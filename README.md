@@ -46,5 +46,15 @@ yarn build
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Use Electron-Builder build package 
+
+```sh
+yarn electron:build
+this TXThrift folder display root dir
+put TXThrift folder to root dir resources folder
+use nsis package
+```
+1. ![debug](doc/20201110172601.png)
