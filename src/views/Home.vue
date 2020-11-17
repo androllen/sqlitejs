@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld :msg='msg'></HelloWorld>
+    <hello-world v-model="lovingVue"></hello-world>
+    <div>{{lovingVue}}</div>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ export default {
   data() {
     return {
       msg: fileContents,
+      lovingVue: 'test'
     };
   },
 };
